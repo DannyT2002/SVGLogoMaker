@@ -47,4 +47,7 @@ inquirer
         shape = new Square();
         break;
     }
+
+    shape.setColor(answers.shapeColor);
+
   });
