@@ -31,4 +31,7 @@ inquirer
         name: "shapeColor",
         message: "Enter the shape color (color keyword or hexadecimal):",
       },
-  ]);
+  ])
+  .then((answers) => {
+    console.log(answers);
+  });
