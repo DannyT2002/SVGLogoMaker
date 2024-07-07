@@ -58,6 +58,11 @@ inquirer
   }" font-size="40">${answers.characters}</text>
 </svg>`;
 
+    const dir = "./examples";
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+
     fs.writeFileSync("./examples/logo.svg", svgContent);
     console.log("Generated logo.svg");
   });
