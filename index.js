@@ -57,4 +57,7 @@ inquirer
     answers.textColor
   }" font-size="40">${answers.characters}</text>
 </svg>`;
+
+    fs.writeFileSync("./examples/logo.svg", svgContent);
+    console.log("Generated logo.svg");
   });
